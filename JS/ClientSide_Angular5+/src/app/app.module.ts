@@ -2,15 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ReportViewerComponent } from './report-viewer/report-viewer.component';
+import { DxReportViewerModule } from 'devexpress-reporting-angular';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ReportViewerComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DxReportViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
