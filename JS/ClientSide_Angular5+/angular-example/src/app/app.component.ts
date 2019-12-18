@@ -15,7 +15,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
   title = 'DXReportViewerSample';
-  reportUrl = 'Products';
-  hostUrl = 'http://localhost:54114/';
-  invokeAction = "/WebDocumentViewer/Invoke";
+  reportUrl: string = 'Products';
+  hostUrl: string = 'http://localhost:54114/';
+  invokeAction: string = "/WebDocumentViewer/Invoke";
 }
