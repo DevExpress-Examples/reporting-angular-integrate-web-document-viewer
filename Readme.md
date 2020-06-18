@@ -25,6 +25,15 @@ Perform the following steps to run this example:
 For a step-by-step tutorial, refer to the
 [Document Viewer Integration in Angular](https://docs.devexpress.com/XtraReports/119430) topic.
 
+##Using an ASP.NET Core backend
+
+To connect a React application to an ASP.NET Core backend and to configure an ASP.NET Core application, follow steps described in this help topic: [Document Viewer Server-Side Application (ASP.NET Core)](https://docs.devexpress.com/XtraReports/400197/create-end-user-reporting-applications/web-reporting/javascript-reporting/document-viewer/server-side-configuration/document-viewer-server-side-configuration-asp-net-core). A controller with the "DXXRDV" route will be registered in this application automatically. So, you will be able to connect your React viewer component to this route:
+```ts
+invokeAction = "DXXRDV";
+```
+Take a special note that it will be necessary to move the implementation of the "MyReportStorage" report storage to your ASP.NET Core application and register it there as demonstrated in the aforementioned help topic.
+
+
 **See also**:
 
 * [How to use the Web Report Designer in JavaScript with Angular](https://github.com/DevExpress-Examples/how-to-use-the-web-report-designer-in-javascript-with-angular-t566422) example on GitHub
