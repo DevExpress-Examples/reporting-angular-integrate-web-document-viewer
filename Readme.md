@@ -8,11 +8,11 @@ Follow these steps to update the project:
 
 ### Upgrade the server-side app
 
-Use the [DevExpress Project Converter](https://docs.devexpress.com/ProjectConverter/2529/project-converter) to upgrade assembly references for the back-end project solution (CS\ServerSide.sln** or **VB\ServerSide.sln**). You can open the project in Visual Studio and navigate to the Menu: Extensions -> DevExpress -> Project Converter. Select the required version and upgrade the project.
+Use the [DevExpress Project Converter](https://docs.devexpress.com/ProjectConverter/2529/project-converter) to upgrade assembly references for the back-end project solution (**CS\ServerSide.sln** or **VB\ServerSide.sln**). You can open the project in Visual Studio and navigate to the Menu: Extensions -> DevExpress -> Project Converter. Select the required version and upgrade the project.
 
 ### Upgrade the client-side app
 
-Navigate to the `package.json` file in the JS\ClientSide_Angular5+\angular-example** folder and change all DevExpress script versions to the version you're using on the server side. For instance, if you're using v20.2.6, modify the package.json file as follows:
+Navigate to the `package.json` file in the **JS\ClientSide_Angular5+\angular-example** folder and change all DevExpress script versions to the version you're using on the server side. For instance, if you're using v20.2.6, modify the package.json file as follows:
 
 ```
     {
