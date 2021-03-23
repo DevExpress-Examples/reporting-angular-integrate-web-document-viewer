@@ -67,7 +67,11 @@ invokeAction = "DXXRDV";
 ```
 Take a special note that it will be necessary to move the implementation of the "MyReportStorage" report storage to your ASP.NET Core application and register it there as demonstrated in the aforementioned help topic.
 
+## Troubleshooting 
+The following articles help troubleshoot and resolve issues that may occur in web reporting applications:
+* [Troubleshooting](https://docs.devexpress.com/XtraReports/401726/web-reporting/general-information/troubleshooting)
+* [Reporting Application Diagnostics](https://docs.devexpress.com/XtraReports/401687/web-reporting/general-information/application-diagnostics)
 
-**See also**:
+## See also
 
 * [How to use the Web Report Designer in JavaScript with Angular](https://github.com/DevExpress-Examples/how-to-use-the-web-report-designer-in-javascript-with-angular-t566422) example on GitHub
