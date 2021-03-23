@@ -39,7 +39,7 @@ This example consists of two parts: 
 
 - An <a href="https://angular.io/">Angular</a> front-end client application.
 
-### Run the example
+### Run the Example
 Perform the following steps to run this example:
 
 1. Open the back-end project solution (**CS\ServerSide.sln** or **VB\ServerSide.sln**) in Visual Studio and run the project.
