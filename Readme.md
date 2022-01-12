@@ -57,9 +57,9 @@ Perform the following steps to run this example:
 
     ```ng serve```
 
-5. Point your browser to [http://localhost:4200/](http://localhost:4200/) to see the result.
+5. Point your browser to `http://localhost:4200/` to see the result.
 
-![](images/screenshot.png)
+![Web Document Viewer in JavaScript with Angular](images/screenshot.png)
 
 For a step-by-step tutorial, refer to the
 [Document Viewer Integration in Angular](https://docs.devexpress.com/XtraReports/119430) topic.
