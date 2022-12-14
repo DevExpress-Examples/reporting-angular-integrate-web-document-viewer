@@ -1,4 +1,4 @@
-﻿using DevExpress.Web.Mvc.Controllers;
+using DevExpress.Web.Mvc.Controllers;
 using System.Web.Mvc;
 
 namespace ServerSide.Controllers

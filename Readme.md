@@ -1,5 +1,5 @@
 <!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128596817/21.2.1%2B)
+![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128596817/19.2.4%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T566419)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
@@ -57,9 +57,9 @@ Perform the following steps to run this example:
 
     ```ng serve```
 
-5. Point your browser to `http://localhost:4200/` to see the result.
+5. Point your browser to [http://localhost:4200/](http://localhost:4200/) to see the result.
 
-![Web Document Viewer in JavaScript with Angular](images/screenshot.png)
+![](images/screenshot.png)
 
 For a step-by-step tutorial, refer to the
 [Document Viewer Integration in Angular](https://docs.devexpress.com/XtraReports/119430) topic.
