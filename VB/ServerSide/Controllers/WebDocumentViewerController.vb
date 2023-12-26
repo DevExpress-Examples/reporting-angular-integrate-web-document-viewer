@@ -1,4 +1,4 @@
-﻿Imports System.Linq
+Imports System.Linq
 Imports DevExpress.Web.Mvc.Controllers
 Imports System.Web.Mvc
 Imports DevExpress.XtraReports.Web.Extensions

@@ -24,9 +24,9 @@ Navigate to the `package.json` file in the **JS\ClientSide_Angular5+\angular-exa
         ...
         "dependencies": {
             ...
-            "devexpress-reporting-angular": "20.2.6",
-            "@devexpress/analytics-core": "20.2.6",            
-            "devextreme": "20.2.6",
+            "devexpress-reporting-angular": "23.1-stable",
+            "@devexpress/analytics-core": "23.1-stable",            
+            "devextreme": "23.1-stable",
         },
         ...
     }
@@ -57,9 +57,9 @@ Perform the following steps to run this example:
 
     ```ng serve```
 
-5. Point your browser to `http://localhost:4200/` to see the result.
+5. Point your browser to [http://localhost:4200/](http://localhost:4200/) to see the result.
 
-![Web Document Viewer in JavaScript with Angular](images/screenshot.png)
+![](images/screenshot.png)
 
 For a step-by-step tutorial, refer to the
 [Document Viewer Integration in Angular](https://docs.devexpress.com/XtraReports/119430) topic.

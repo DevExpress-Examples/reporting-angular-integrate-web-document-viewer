@@ -5,7 +5,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
   templateUrl: './app.component.html',
   styleUrls: [
-    "../../node_modules/jquery-ui/themes/base/all.css",
     "../../node_modules/devextreme/dist/css/dx.common.css",
     "../../node_modules/devextreme/dist/css/dx.light.css",
     "../../node_modules/@devexpress/analytics-core/dist/css/dx-analytics.common.css",
