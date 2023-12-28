@@ -6,7 +6,7 @@
 
 This example shows how to incorporate the Web Document Viewer into a client-side app built with Angular. The example consists of two parts:
 
-- A server (back-end) ASP.NET Core project that enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements a custom web report storage.
+- A server-side (back-end) ASP.NET Core project that enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements a custom web report storage.
 
 - An [Angular](https://angular.io/) front-end client application.
 
