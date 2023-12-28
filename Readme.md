@@ -31,7 +31,7 @@ Perform the following steps to run this example:
 
 ## Upgrade the Project
 
-Before you run the project, verify the DevExpress version. If necessary, upgrade it to the DevExpress version you're currently using. Make sure to use the same version of DevExpress components for both Front-end and Back-end applications.
+Before you run the project, verify the DevExpress version. If necessary, upgrade it to the DevExpress version you're currently using. Make sure to use the same version of DevExpress components for both front-end and Back-end applications.
 
 Follow these steps to update the project:
 
