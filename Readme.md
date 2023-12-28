@@ -63,12 +63,17 @@ Open the **angular-document-viewer** folder in the console and run the command t
 npm install
 ```
 
+## Files to Review
+
+- [app.component.ts](angular-document-viewer/src/app/app.component.ts)
+- [app.component.html](angular-document-viewer/src/app/app.component.html)
+- [Program.cs](ServerSideApp/ServerSideApp/Program.cs)
+- [ReportingControllers.cs](ServerSideApp/ServerSideApp/Controllers/ReportingControllers.cs)
 
 ## Documentation 
 
 * [Create an Angular Front-End Application with a Document Viewer](https://docs.devexpress.com/XtraReports/119430)
 * [Document Viewer Server-Side Application (ASP.NET Core)](https://docs.devexpress.com/XtraReports/400197) 
-
 * [Document Viewer's Server-Side Configuration (ASP.NET MVC)](https://docs.devexpress.com/XtraReports/118597)
 * [Troubleshooting](https://docs.devexpress.com/XtraReports/401726/web-reporting/general-information/troubleshooting)
 * [Reporting Application Diagnostics](https://docs.devexpress.com/XtraReports/401687/web-reporting/general-information/application-diagnostics)
