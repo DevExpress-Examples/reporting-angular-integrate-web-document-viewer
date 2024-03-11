@@ -14,7 +14,7 @@ This example shows how to incorporate the Web Document Viewer into a client-side
 
 Perform the following steps to run this example:
 
-1. Open the back-end project solution (**ServerSideApp.sln**) in Visual Studio and run the project.
+1. Open the back-end project solution (**ServerSideApp\ServerSideApp.sln**) in Visual Studio and run the project.
 2. Navigate to the **angular-document-viewer** folder that is the client part's root folder.
 3. Open the console and run the following command to download packages:
 
@@ -25,6 +25,9 @@ Perform the following steps to run this example:
     ```npm start```
 
 5. Point your browser to [http://localhost:4200/](http://localhost:4200/) to see the result.
+
+> [!TIP]
+> Make sure that the backend application runs on the port specified in the host setting of the Document Viewer component. For more information, refer to the following help topic: [Determine the Host URL](https://docs.devexpress.com/XtraReports/400197/web-reporting/asp-net-core-reporting/server-side-configuration/document-viewer-server-side-configuration-asp-net-core#step-3-determine-the-host-url).
 
 ![](images/screenshot.png)
 
