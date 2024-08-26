@@ -53,6 +53,5 @@
     <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="23.2.*-*" />
     <PackageReference Include="DevExpress.Drawing.Skia" Version="23.2.*-*" />
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
-    <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.113" />
   </ItemGroup>
 </Project>
