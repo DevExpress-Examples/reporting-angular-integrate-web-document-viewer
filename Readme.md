@@ -6,74 +6,45 @@
 <!-- default badges end -->
 # Reporting for Angular - How to integrate the Web Document Viewer in Angular App
 
-This example shows how to incorporate the Web Document Viewer into a client-side app built with Angular. The example consists of two parts:
+This example incorporates the Web Document Viewer into a client-side app built with Angular. The example consists of two parts:
 
-- A server-side (back-end) ASP.NET Core project that enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements a custom web report storage.
+- The [ServerApp](ServerApp) folder contains the backend project. The project is an ASP.NET Core application that enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements custom web report storage.
 
-- An [Angular](https://angular.io/) front-end client application.
-
-## Run the Example
-
-Perform the following steps to run this example:
-
-1. Open the back-end project solution (**ServerSideApp\ServerSideApp.sln**) in Visual Studio and run the project.
-2. Navigate to the **angular-document-viewer** folder that is the client part's root folder.
-3. Open the console and run the following command to download packages:
-
-    ```npm install```
-
-4. Run the command to compile and start the client part:
-
-    ```npm start```
-
-5. Point your browser to [http://localhost:4200/](http://localhost:4200/) to see the result.
-
-> [!TIP]
-> Make sure that the backend application runs on the port specified in the host setting of the Document Viewer component. For more information, refer to the following help topic: [Determine the Host URL](https://docs.devexpress.com/XtraReports/400197/web-reporting/asp-net-core-reporting/server-side-configuration/document-viewer-server-side-configuration-asp-net-core#step-3-determine-the-host-url).
-
-![](images/screenshot.png)
+- The [angular-document-viewer](angular-document-viewer) folder contains the client application built with [Angular](https://angular.io/).
 
 
-## Upgrade the Project
+## Quick Start
 
-Before you run the project, verify the DevExpress version. If necessary, upgrade it to the DevExpress version you're currently using. Make sure to use the same version of DevExpress components for both front-end and Back-end applications.
+### Server
 
-Follow these steps to update the project:
-
-### Upgrade the server-side app
-
-Use the [DevExpress Project Converter](https://docs.devexpress.com/ProjectConverter/2529/project-converter) to upgrade assembly references for the back-end project solution. You can open the project in Visual Studio and navigate to the Menu: Extensions -> DevExpress -> Project Converter. Select the required version and upgrade the project.
-
-### Upgrade the client-side app
-
-Navigate to the `package.json` file in the **angular-document-viewer** folder and change all DevExpress script versions to the version you're using on the server side. For instance, if you're using v23.2.3, modify the package.json file as follows:
+In the *ServerApp* folder, run the following command:
 
 ```
-    {
-        ...
-        "dependencies": {
-            ...
-            "devexpress-reporting-angular": "23.2-stable",
-            "@devexpress/analytics-core": "23.2-stable", 
-            "devextreme": "23.2-stable",
-            "devextreme-angular": "23.2-stable"
-        },
-        ...
-    }
+dotnet run
 ```
 
-Open the **angular-document-viewer** folder in the console and run the command to download updated packages:
+The server starts at http://localhost:5000. To debug the server, run the application in Visual Studio.
+
+### Client
+
+In the *angular-document-viewer* folder, run the following commands:
 
 ```
 npm install
+npm start
 ```
+
+5. Point your browser to [http://localhost:4200/](http://localhost:4200/) to see the result.
+
+![](images/screenshot.png)
+
 
 ## Files to Review
 
 - [app.component.ts](angular-document-viewer/src/app/app.component.ts)
 - [app.component.html](angular-document-viewer/src/app/app.component.html)
-- [Program.cs](ServerSideApp/ServerSideApp/Program.cs)
-- [ReportingControllers.cs](ServerSideApp/ServerSideApp/Controllers/ReportingControllers.cs)
+- [Program.cs](ServerApp/Program.cs)
+- [ReportingControllers.cs](ServerApp/Controllers/ReportingControllers.cs)
 
 ## Documentation 
 
@@ -85,7 +56,7 @@ npm install
 
 ## More Examples
 
-* [How to use the Web Report Designer in JavaScript with Angular](https://github.com/DevExpress-Examples/how-to-use-the-web-report-designer-in-javascript-with-angular-t566422)
+* [How to use the Web Report Designer in JavaScript with Angular](https://github.com/DevExpress-Examples/reporting-angular-integrate-report-designer)
 
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
