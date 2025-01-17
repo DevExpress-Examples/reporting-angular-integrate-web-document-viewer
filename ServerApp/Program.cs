@@ -40,6 +40,14 @@ builder.Services.ConfigureReportingServices(configurator => {
     });
 });
 builder.Services.AddDbContext<ReportDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("ReportsDataConnectionString")));
+builder.Services.AddCors(options => {
+    options.AddPolicy("AllowCorsPolicy", builder => {
+        // Allow all ports on local host.
+        builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost");
+        builder.AllowAnyHeader();
+        builder.AllowAnyMethod();
+    });
+});
 
 var app = builder.Build();
 using(var scope = app.Services.CreateScope()) {
@@ -52,7 +60,7 @@ AccessSettings.ReportingSpecificResources.TrySetRules(contentDirectoryAllowRule,
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-
+app.UseCors("AllowCorsPolicy");
 
 app.UseDevExpressControls();
 System.Net.ServicePointManager.SecurityProtocol |= System.Net.SecurityProtocolType.Tls12;
