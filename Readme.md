@@ -4,14 +4,13 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-# Reporting for Angular - How to integrate the Web Document Viewer in Angular App
+# Reporting for Angular - Integrate a Web Document Viewer in Angular App
 
 This example incorporates the Web Document Viewer into a client-side app built with Angular. The example consists of two parts:
 
 - The [ServerApp](ServerApp) folder contains the backend project. The project is an ASP.NET Core application that enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements custom web report storage.
 
 - The [angular-document-viewer](angular-document-viewer) folder contains the client application built with [Angular](https://angular.io/).
-
 
 ## Quick Start
 
