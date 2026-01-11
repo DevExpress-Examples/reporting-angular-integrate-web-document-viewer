@@ -40,6 +40,7 @@ builder.Services.ConfigureReportingServices(configurator => {
     });
 });
 builder.Services.AddDbContext<ReportDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("ReportsDataConnectionString")));
+
 builder.Services.AddCors(options => {
     options.AddPolicy("AllowCorsPolicy", builder => {
         // Allow all ports on local host.
@@ -48,14 +49,14 @@ builder.Services.AddCors(options => {
         builder.AllowAnyMethod();
     });
 });
-
 var app = builder.Build();
 using(var scope = app.Services.CreateScope()) {
     var services = scope.ServiceProvider;    
     services.GetService<ReportDbContext>().InitializeDatabase();
 }
 var contentDirectoryAllowRule = DirectoryAccessRule.Allow(new DirectoryInfo(Path.Combine(app.Environment.ContentRootPath, "Content")).FullName);
-AccessSettings.ReportingSpecificResources.TrySetRules(contentDirectoryAllowRule, UrlAccessRule.Allow());
+AccessSettings.ReportingSpecificResources.SetRules(contentDirectoryAllowRule, UrlAccessRule.Deny());
+DevExpress.XtraReports.Configuration.Settings.Default.UserDesignerOptions.DataBindingMode = DevExpress.XtraReports.UI.DataBindingMode.Expressions;
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

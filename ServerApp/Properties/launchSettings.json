@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "ServerApp.Server": {
+    "ServerApp": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
