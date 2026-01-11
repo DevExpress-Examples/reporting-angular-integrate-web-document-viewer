@@ -40,8 +40,8 @@ npm start
 
 ## Files to Review
 
-- [app.component.ts](angular-document-viewer/src/app/app.component.ts)
-- [app.component.html](angular-document-viewer/src/app/app.component.html)
+- [app.ts](angular-document-viewer/src/app/app.ts)
+- [app.html](angular-document-viewer/src/app/app.html)
 - [Program.cs](ServerApp/Program.cs)
 - [ReportingControllers.cs](ServerApp/Controllers/ReportingControllers.cs)
 
